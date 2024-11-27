@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Exames</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+        }
+
+        .header-logo {
+            font-size: 1.5rem;
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-color: #ffebcc;
+            color: #555;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header d-flex justify-content-between align-items-center">
+        <div class="header-logo">❤️ Amor Saúde</div>
+        <nav>
+            <a href="#" class="text-primary mx-2">Quem Somos?</a>
+            <a href="#" class="text-primary mx-2">Unidades</a>
+            <a href="#" class="text-primary mx-2">Teleatendimento</a>
+            <a href="#" class="text-primary mx-2">Ajuda</a>
+            <a href="#" class="text-primary mx-2">Blog</a>
+        </nav>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        Setembro Amarelo: Sua saúde mental não tem preço
+    </div>
+
+    <!-- Container Formulário -->
+    <div class="container my-4">
+        <div class="text-center mb-4">
+            <h1 class="logo text-danger">❤️ Amor Saúde</h1>
+            <h2 class="text-primary">Cadastro de Exames</h2>
+        </div>
+        <form action="/salvarExame" method="POST" class="bg-white p-4 rounded shadow-sm">
+            <div class="form-group">
+                <label for="nomeExame">Nome do Exame:</label>
+                <input type="text" class="form-control" id="nomeExame" name="nomeExame" placeholder="Digite o nome do exame" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea class="form-control" id="descricao" name="descricao" placeholder="Descreva o exame" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dataExame">Data do Exame:</label>
+                <input type="date" class="form-control" id="dataExame" name="dataExame" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Cadastrar Exame</button>
+        </form>
+        <div class="text-center mt-3">
+            <!-- Link atualizado para a página principal -->
+            <a href="index.html" class="text-primary">⬅ Voltar para a página principal</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Atendimento ao cliente via telefone: (99) 9 9999-9999<br>
+        E-mail: ameasaude@gmail.com
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
